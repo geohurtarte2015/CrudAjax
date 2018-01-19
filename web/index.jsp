@@ -115,39 +115,113 @@
         </script>
 
     </head>
-    <body>
-        <h1>Tabla</h1>
-        
-        <div>
-                First name: <input  name="txtnombre" id="txtnombre">
-                <br>
-                Last name: <input  name="txtapellido" id="txtapellido">
-                <br>
-                User: <input  name="txtuser" id="txtuser">
-                <br>
-                Password: <input  name="txtpassword" id="txtpassword">
-                <br>
-                <br>
-                <button type="button" id="save"> save</button>
-                <button type="button" id="delete">delete </button>
-                <button type="button" id="update"> update </button>
-             
-        </div>    
-        
-        <br>
-        
-        <table id="table_analista" class="display" cellspacing="0" width="100%">
-        <thead>
-               <tr>
-               <th>Id</th>
-               <th>Nombre</th>
-               <th>Apellido</th>
-               <th>Usuario</th>
-               <th>Password</th>             
-               <th></th>
-               </tr>
-        </tbody>
-    </table>
+    <body>    
+        <div class="container">
+            <div class="row">
+                <div class='col-lg-4'>
+                   
+                        <div class="panel-heading">
+                            Creacion Analistas
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">
+                                Launch Demo Modal
+                            </button>
+                            <!-- Modal -->
+                             <div style="display: none;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                 <div class="modal-dialog modal-lg">
+                   <div class="modal-content">
+                        <div class="modal-header">                                           
+                            <h4 class="modal-title" id="myModalLabel">Mantenimiento Ticket</h4>
+                        </div>
+                   <div class="modal-body">
+                                          
+                    <div class="modal-body">
+                                          
+                        <div class="panel panel-default">
+                                     
+                          <!-- /.panel-body -->
+                          <div class="panel-body">
+                            
+                            <div class="row">                            
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                            <label>Nombre</label>
+                                            <input class="form-control" name="txtnombre" id="txtnombre" placeholder="Nombre">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                            <label>Apellido</label>
+                                            <input class="form-control" name="txtapellido" id="txtapellido" placeholder="Apellido">
+                                    </div>
+                                </div>
+                            </div><!-- /.Nombre Apellido -->  
+                            
+                            <div class="row">                            
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                            <label>Usuario</label>
+                                            <input class="form-control" name="txtuser" id="txtuser" placeholder="Usuario">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                            <label>Password</label>
+                                            <input class="form-control" name="txtpassword" id="txtpassword" placeholder="Password">
+                                    </div>
+                                </div>
+                            </div><!-- /.Usuario Contraseña -->  
+                             
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                <button id="save" type="button" class="btn btn-primary">Guardar</button>                             
+                                <button type="button" class="btn btn-primary " id="myBtnAnalistaShow" >Crear</button>
+                            </div>
+                            <div class="modal-footer">
+                                <table id="table_analista" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">  
+                                          
+                                             <thead>
+                                                <tr>
+                                                <th>Id</th>
+                                                <th>Nombre</th>
+                                                <th>Apellido</th>
+                                                <th>Usuario</th>
+                                                <th>Password</th>             
+                                                <th></th>
+                                                </tr>
+                                             
+                                </table>
+                            </div>
+                     </div>
+                                            
+                    </div>   
+                        
+               
+                                            
+                    </div>
+                         
+                               
+                        
+                                <!-- /.modal-dialog -->
+                            </div>
+                                <!-- /.modal-dialog -->
+                            
+                                <!-- /.modal-dialog -->
+                            
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            <!-- /.modal -->
+                        </div>
+                        <!-- .panel-body -->
+                    
+                </div>
+              
+            </div>
         
         
     </body>
